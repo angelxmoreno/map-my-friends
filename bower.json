@@ -1,0 +1,19 @@
+{
+  "name": "map-my-friends",
+  "homepage": "https://github.com/angelxmoreno/map-my-friends",
+  "authors": [
+    "Angel S. Moreno <angelxmoreno@gmail.com>"
+  ],
+  "description": "A sample application for the GA JS-320 class",
+  "main": "public/index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "public/lib"
+  ]
+}
