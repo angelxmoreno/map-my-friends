@@ -22,9 +22,9 @@ having some difficulty with.
 
 ## Tools, SDKs and APIs used
 
-A CSS framework: because this is a JS class, not a UI class
+Bootstrap as a CSS framework: because this is a JS class, not a UI class
 
-A routing library: to provide an SPA ( Single Page Application ) expirience
+SammyJS as a routing library: to provide an SPA ( Single Page Application ) expirience
 
 Firebase: the database
 
@@ -32,9 +32,22 @@ Foursquare API: to fetch friends
 
 Google Maps APIs: to map my friends
 
-A no-oauth JS proxy to authenticate users
+Oauth.io as sa no-oauth JS proxy to authenticate users
 
 Bower: package manager for web libraries
+
+
+## Gotchas
+1. Originally I wanted to use Bower as a package manager but quickly realized not all libs
+are on Bower. For example, the Google Maps API. I decided to use CDNs when ever possible.
+
+## Topics of interest
+1. Google Maps
+1. Firebase
+1. Foursquare
+1. Bootstrap
+1. Oauth.io 
+1. SammyJS
 
 ## License
 
