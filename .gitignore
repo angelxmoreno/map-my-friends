@@ -58,3 +58,5 @@ typings/
 .env
 
 public/lib/
+functions/service-account.json
+public/js/config.js

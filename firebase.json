@@ -3,9 +3,16 @@
     "public": "public",
     "rewrites": [
       {
+        "source": "/create_token",
+        "function": "create_token"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }
     ]
+  },
+  "database": {
+    "rules": "database.rules.json"
   }
 }

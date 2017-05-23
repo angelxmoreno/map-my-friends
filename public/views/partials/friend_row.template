@@ -1,0 +1,15 @@
+<div class="media friend-row">
+    <div class="media-left">
+        <a href="#" id="friendClick_<%= marker_id %>"  class="friendClick" data-marker-id="<%= marker_id %>">
+            <img class="media-object" src="<%= user.photo.prefix%>100<%= user.photo.suffix %>" alt="...">
+        </a>
+    </div>
+    <div class="media-body">
+        <h4 class="media-heading"><%= user.firstName %></h4>
+        <h5><%= venue.name %></h5>
+        <%= venue.location.formattedAddress %><br/>
+        <%= venue.location.country %><br/>
+
+    </div>
+</div>
+<hr/>

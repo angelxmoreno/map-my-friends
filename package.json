@@ -1,0 +1,19 @@
+{
+  "name": "map-my-friends",
+  "version": "1.0.0",
+  "description": "A sample application for the GA JS-320 class",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelxmoreno/map-my-friends.git"
+  },
+  "author": "Angel S. Moreno <angelxmoreno@gmail.com> (https://angelxmoreno.github.io/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angelxmoreno/map-my-friends/issues"
+  },
+  "homepage": "https://github.com/angelxmoreno/map-my-friends#readme"
+}

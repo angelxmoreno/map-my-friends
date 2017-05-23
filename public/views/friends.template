@@ -1,0 +1,10 @@
+<div class="col-md-2">
+    <h3>Friends</h3>
+    <div id="friends-list"></div>
+</div>
+
+<div class="col-md-10">
+    <div id="map"></div>
+</div>
+
+

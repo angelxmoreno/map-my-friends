@@ -8,6 +8,9 @@
     <title>Map My Friends</title>
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="lib/bootstrap-social/bootstrap-social.css">
+
     <link rel="stylesheet" href="css/styles.css">
 
     <!--[if lt IE 9]>
@@ -28,70 +31,53 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Map My Friends</a>
+            <a class="navbar-brand" href="/#/">Map My Friends</a>
         </div>
 
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="#">Friends</a>
+                    <a href="/#/friends">Friends</a>
                 </li>
                 <li>
-                    <a href="#">Map</a>
+                    <a href="/#/">Map</a>
                 </li>
             </ul>
 
             <div class="nav navbar-nav navbar-right">
-                <a class="btn btn-default navbar-btn">Sign in</a>
-                <p class="navbar-text">Signed in as Mark Otto</p>
+
+                <p id="loggedInStatus" class="navbar-text hide showWhenLoggedIn">Logged in as <span></span></p>
+                <a id="logOutBtn" class="btn navbar-btn btn-default hide showWhenLoggedIn">
+                    <span class="fa fa-foursquare"></span> Log Out
+                </a>
+                <a id="logInBtn" class="btn btn-social btn-foursquare navbar-btn hide hideWhenLoggedIn">
+                    <span class="fa fa-foursquare"></span> Log in with Foursquare
+                </a>
             </div>
         </div>
     </div>
 </nav>
 
-<div class="container">
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Hello, JS-3.20!</h1>
-            <p>This is a template for a simple marketing or informational website. It includes a large callout called a
-                jumbotron and three supporting pieces of content. Use it as a starting point to create something more
-                unique.</p>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-        </div>
-    </div>
-    <!-- Example row of columns -->
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis
-                euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis
-                euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula
-                porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-                fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-    </div>
+<div class="container-fluid">
+    <section id="main"></section>
+</div>
 
-    <hr>
-
-    <footer>
-        <p>&copy; 2017 Map My Friends - Fake Inc</p>
-    </footer>
-</div> <!-- /container -->
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyA9KzaOwPJt5XvLoi92_fs1sQcV_iM4n-8"></script>
+<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="//www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
+<script src="lib/sammy/lib/sammy.js"></script>
+<script src="lib/sammy/lib/plugins/sammy.template.js"></script>
+<script src="lib/oauth-js/dist/oauth.js"></script>
+
+<script src="js/config.js"></script>
+<script src="js/foursquare.js"></script>
+<script src="js/map.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/controller.js"></script>
+<script src="js/model.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

@@ -3,3 +3,14 @@ body {
     padding-top: 50px;
     padding-bottom: 20px;
 }
+
+#map {
+    height: 94vh;
+    width: 100%;
+    margin-top: 5px;
+}
+
+#friends-list {
+    height: 94vh;
+    overflow-y: scroll;
+}
